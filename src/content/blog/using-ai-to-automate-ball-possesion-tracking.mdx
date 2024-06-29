@@ -1,0 +1,78 @@
+---
+title: Using AI to Automate Ball Possession Tracking
+description: Leveraging AI to compute ball possession and enhance football match analysis through automated video analytics.
+date: 2024-03-29
+tags: ["AI", "Football Analytics", "Video Analytics","YOLO" ]
+published: true
+---
+
+### Table of Contents
+
+1. [Introduction](#introduction)
+2. [The Importance of Ball Possession](#the-importance-of-ball-possession)
+3. [AI-Driven Solution](#ai-driven-solution)
+4. [Implementation Steps](#implementation-steps)
+5. [Conclusion](#conclusion)
+
+---
+
+### Introduction
+
+Ai is revolutionizing the sports industry by providing advanced analytics and insights that were previously unattainable. In football, AI-driven solutions can enhance match analysis, player performance evaluation, and strategic decision-making. One key area where AI can make a significant impact is in automating the calculation of ball possession during matches.
+
+---
+
+### The Importance of Ball Possession
+
+Ball possession is a critical metric in football. A 2020 study over 625 UEFA matches revealed that teams with higher possession rates won 49.2% of the time. Accurately measuring ball possession can provide valuable insights into team performance and strategy.
+
+---
+
+### AI-Driven Solution
+
+To automate the calculation of ball possession, we aim to use computer vision techniques. Our approach focuses on detecting players and the ball, identifying teams, and determining possession, all in real-time.
+
+---
+
+### Implementation Steps
+
+#### Step 1: Player Detection 
+
+We utilized YOLOv5 for detecting players, ensuring accurate and efficient identification of players on the field.
+
+#### Step 2: Team Identification
+
+We implemented the following approach for classifying teams:
+
+- **Color Filtering with HSV**: This method uses HSV filtering to classify jerseys by color, combined with tracking to enhance stability.
+
+<video controls>
+  <source
+    src="https://tryolabs.com/assets/blog/2022-10-17-measuring-football-ball-possession-ai-video-analytics/city_animation-e0d45e24d1.mp4"
+    type="video/mp4"
+  ></source>
+</video>
+<div align="center">
+  Figure: Team identification using an HSV filter (credit to
+  [tryolabs.com](https://tryolabs.com/blog/2022/10/17/measuring-soccer-ball-possession-ai-video-analytics))
+</div>
+
+#### Step 3: Ball Detection (In progress)
+
+We will use a fine-tuned YOLOv5 model, trained specifically on football footage, for detecting the ball.
+
+#### Step 4: Ball Possession Calculation (In progress)
+
+We plan to determine ball possession by calculating the distance between players and the ball, applying a threshold to ensure accurate possession metrics.
+
+---
+
+### Conclusion
+
+By planning to integrate AI with video analytics, our system aims to provide accurate and automated ball possession metrics, enhancing football analytics. This approach illustrates the potential of AI in sports, offering insights that will improve team performance and strategies.
+
+---
+
+### Project Links
+
+- **GitHub Repository**: [Link to GitHub Repo](https://github.com/haithem-ss/ball-possession-using-AI)
