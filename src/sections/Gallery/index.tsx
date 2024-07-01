@@ -13,12 +13,13 @@ export default function () {
   let Projects: Array<ProjectType> = [
     {
       image: RAGProject,
-      title: "Transforming PDF Content into Interactive Q&A with RAG and Vector Databases",
+      title:
+        "Transforming PDF Content into Interactive Q&A with RAG and Vector Databases",
       description:
         "Upload your PDFs, generate personalized questions, and take customized practice tests. Turn your study materials into an interactive learning experience and watch your knowledge grow.",
       linkFigma: null,
-      linkArticle: "blog/retrieval-augmented-generation",
-      linkPreview: null,
+      linkArticle: "blog/transforming-pdf-content-into-intearactive-qa",
+      linkPreview: "https://rag-haithemss.vercel.app",
       linkGithub: "https://github.com/haithem-ss/RAG_app",
       technologies: ["Nextjs 14", "Pinecone", "Hugging Face", "OpenAI"],
       tags: ["Website", "Personal project", "AI"],

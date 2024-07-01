@@ -14,6 +14,7 @@ const inter = Poppins({
 export const metadata: Metadata = {
   title: "SAIDA haithem",
   description: "A fullstack developper",
+  manifest:"/manifest.json",
 };
 
 export default function RootLayout({
